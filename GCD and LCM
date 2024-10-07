@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int n1,n2,lcm,c1,c2;
+	
+	cout<<"Enter two numbers";
+	cin>>n1>>n2;
+	 c1=n1,c2=n2;
+     while(n1!=n2){
+     	if(n1>n2)
+     	n1=(n1-n2);
+     	else
+     	n2=(n2-n1);
+	 }
+	 cout<<"GCD of two numbers "<<n1<<endl;
+	 lcm = (c1*c2)/n1;
+	 cout<<"Lcm of two numbers ";
+	 cout<<lcm;
+	 return 0;
+}
