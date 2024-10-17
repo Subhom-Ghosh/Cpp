@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int fibonacci(int i){
+	if(i==0 || i==1)
+	return 1;
+	else 
+	return fibonacci(i-1)+fibonacci(i-2); 
+}
+int main(){
+	int i,n,fibo;
+	cout<<"Enter the range";
+	cin>>n;
+	cout<<"The fibonacci series is ";
+	for(i=0;i<=n;i++){
+	
+	fibo = fibonacci(i);
+	cout<<fibo ;
+}
+return 0;
+}
